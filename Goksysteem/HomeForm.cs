@@ -37,5 +37,12 @@ namespace Goksysteem
             this.Hide();
             loginForm.Show(this);
         }
+
+        private void lbLogo_Click(object sender, EventArgs e)
+        {
+            var homeForm = new HomeForm();
+            this.Hide();
+            homeForm.Show(this);
+        }
     }
 }

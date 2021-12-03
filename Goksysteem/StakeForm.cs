@@ -16,5 +16,33 @@ namespace Goksysteem
         {
             InitializeComponent();
         }
+
+        private void lbSummary_Click(object sender, EventArgs e)
+        {
+            var summaryForm = new SummaryForm();
+            this.Hide();
+            summaryForm.Show(this);
+        }
+
+        private void lbStake_Click(object sender, EventArgs e)
+        {
+            var stakeForm = new StakeForm();
+            this.Hide();
+            stakeForm.Show(this);
+        }
+
+        private void lbLogout_Click(object sender, EventArgs e)
+        {
+            var loginForm = new LoginForm();
+            this.Hide();
+            loginForm.Show(this);
+        }
+
+        private void lbLogo_Click(object sender, EventArgs e)
+        {
+            var homeForm = new HomeForm();
+            this.Hide();
+            homeForm.Show(this);
+        }
     }
 }
