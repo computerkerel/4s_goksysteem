@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Goksysteem
 {
-    public partial class LoginForm : Form
+    public partial class StakeForm : Form
     {
-        public LoginForm()
+        public StakeForm()
         {
             InitializeComponent();
-        }
-
-        private void xz_Click(object sender, EventArgs e)
-        {
-            var homeForm = new HomeForm();
-            this.Hide();
-            homeForm.Show(this);
         }
     }
 }
