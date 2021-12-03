@@ -90,7 +90,7 @@ namespace Goksysteem
             this.Controls.Add(this.lbSummary);
             this.Controls.Add(this.lbLogo);
             this.Name = "SummaryForm";
-            this.Text = "SummaryForm";
+            this.Text = "Summary";
             this.ResumeLayout(false);
             this.PerformLayout();
 

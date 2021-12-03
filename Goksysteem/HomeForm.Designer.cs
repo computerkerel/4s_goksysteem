@@ -45,6 +45,7 @@ namespace Goksysteem
             this.lbStake.Size = new System.Drawing.Size(132, 38);
             this.lbStake.TabIndex = 11;
             this.lbStake.Text = "Inzetten";
+            this.lbStake.Click += new System.EventHandler(this.lbStake_Click);
             // 
             // lbLogout
             // 
@@ -56,6 +57,7 @@ namespace Goksysteem
             this.lbLogout.Size = new System.Drawing.Size(154, 38);
             this.lbLogout.TabIndex = 10;
             this.lbLogout.Text = "Uitloggen";
+            this.lbLogout.Click += new System.EventHandler(this.lbLogout_Click);
             // 
             // lbSummary
             // 
