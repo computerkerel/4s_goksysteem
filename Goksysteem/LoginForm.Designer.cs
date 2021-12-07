@@ -29,68 +29,83 @@ namespace Goksysteem
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbStake = new System.Windows.Forms.Label();
-            this.lbLogout = new System.Windows.Forms.Label();
-            this.lbSummary = new System.Windows.Forms.Label();
-            this.lbLogo = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.xz = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbStake
+            // textBox3
             // 
-            this.lbStake.AutoSize = true;
-            this.lbStake.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbStake.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStake.Location = new System.Drawing.Point(454, 21);
-            this.lbStake.Name = "lbStake";
-            this.lbStake.Size = new System.Drawing.Size(112, 31);
-            this.lbStake.TabIndex = 19;
-            this.lbStake.Text = "Inzetten";
+            this.textBox3.Location = new System.Drawing.Point(404, 170);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(9, 20);
+            this.textBox3.TabIndex = 11;
             // 
-            // lbLogout
+            // pictureBox1
             // 
-            this.lbLogout.AutoSize = true;
-            this.lbLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogout.Location = new System.Drawing.Point(608, 21);
-            this.lbLogout.Name = "lbLogout";
-            this.lbLogout.Size = new System.Drawing.Size(129, 31);
-            this.lbLogout.TabIndex = 18;
-            this.lbLogout.Text = "Uitloggen";
+            this.pictureBox1.Location = new System.Drawing.Point(272, 112);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 122);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
-            // lbSummary
+            // button1
             // 
-            this.lbSummary.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
-            this.lbSummary.AutoSize = true;
-            this.lbSummary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSummary.Location = new System.Drawing.Point(231, 21);
-            this.lbSummary.Name = "lbSummary";
-            this.lbSummary.Size = new System.Drawing.Size(180, 31);
-            this.lbSummary.TabIndex = 17;
-            this.lbSummary.Text = "Mijn overzicht";
+            this.button1.Location = new System.Drawing.Point(404, 307);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 31);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // lbLogo
+            // textBox2
             // 
-            this.lbLogo.AutoSize = true;
-            this.lbLogo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbLogo.Location = new System.Drawing.Point(41, 9);
-            this.lbLogo.Name = "lbLogo";
-            this.lbLogo.Size = new System.Drawing.Size(136, 46);
-            this.lbLogo.TabIndex = 16;
-            this.lbLogo.Text = "(Logo)";
+            this.textBox2.Location = new System.Drawing.Point(361, 275);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 20);
+            this.textBox2.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(361, 241);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
+            this.textBox1.TabIndex = 7;
+            // 
+            // xz
+            // 
+            this.xz.Location = new System.Drawing.Point(272, 305);
+            this.xz.Margin = new System.Windows.Forms.Padding(4);
+            this.xz.Name = "xz";
+            this.xz.Size = new System.Drawing.Size(124, 32);
+            this.xz.TabIndex = 6;
+            this.xz.Text = "Login";
+            this.xz.UseVisualStyleBackColor = true;
+            this.xz.Click += new System.EventHandler(this.xz_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.lbStake);
-            this.Controls.Add(this.lbLogout);
-            this.Controls.Add(this.lbSummary);
-            this.Controls.Add(this.lbLogo);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.xz);
             this.Name = "LoginForm";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -98,10 +113,12 @@ namespace Goksysteem
 
         #endregion
 
-        private System.Windows.Forms.Label lbStake;
-        private System.Windows.Forms.Label lbLogout;
-        private System.Windows.Forms.Label lbSummary;
-        private System.Windows.Forms.Label lbLogo;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button xz;
     }
 }
 

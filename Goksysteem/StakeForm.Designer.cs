@@ -40,9 +40,9 @@ namespace Goksysteem
             this.lbStake.AutoSize = true;
             this.lbStake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbStake.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStake.Location = new System.Drawing.Point(442, 31);
+            this.lbStake.Location = new System.Drawing.Point(441, 25);
             this.lbStake.Name = "lbStake";
-            this.lbStake.Size = new System.Drawing.Size(112, 31);
+            this.lbStake.Size = new System.Drawing.Size(132, 38);
             this.lbStake.TabIndex = 15;
             this.lbStake.Text = "Inzetten";
             this.lbStake.Click += new System.EventHandler(this.lbStake_Click);
@@ -52,9 +52,9 @@ namespace Goksysteem
             this.lbLogout.AutoSize = true;
             this.lbLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogout.Location = new System.Drawing.Point(596, 31);
+            this.lbLogout.Location = new System.Drawing.Point(595, 25);
             this.lbLogout.Name = "lbLogout";
-            this.lbLogout.Size = new System.Drawing.Size(129, 31);
+            this.lbLogout.Size = new System.Drawing.Size(154, 38);
             this.lbLogout.TabIndex = 14;
             this.lbLogout.Text = "Uitloggen";
             this.lbLogout.Click += new System.EventHandler(this.lbLogout_Click);
@@ -65,10 +65,11 @@ namespace Goksysteem
             this.lbSummary.AutoSize = true;
             this.lbSummary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSummary.Location = new System.Drawing.Point(219, 31);
+            this.lbSummary.Location = new System.Drawing.Point(189, 25);
             this.lbSummary.Name = "lbSummary";
-            this.lbSummary.Size = new System.Drawing.Size(0, 31);
+            this.lbSummary.Size = new System.Drawing.Size(217, 38);
             this.lbSummary.TabIndex = 13;
+            this.lbSummary.Text = "Mijn overzicht";
             this.lbSummary.Click += new System.EventHandler(this.lbSummary_Click);
             // 
             // lbLogo
@@ -76,9 +77,9 @@ namespace Goksysteem
             this.lbLogo.AutoSize = true;
             this.lbLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbLogo.Location = new System.Drawing.Point(29, 19);
+            this.lbLogo.Location = new System.Drawing.Point(12, 9);
             this.lbLogo.Name = "lbLogo";
-            this.lbLogo.Size = new System.Drawing.Size(136, 46);
+            this.lbLogo.Size = new System.Drawing.Size(171, 58);
             this.lbLogo.TabIndex = 12;
             this.lbLogo.Text = "(Logo)";
             this.lbLogo.Click += new System.EventHandler(this.lbLogo_Click);

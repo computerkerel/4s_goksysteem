@@ -44,37 +44,5 @@ namespace Goksysteem
             this.Hide();
             homeForm.Show(this);
         }
-
-        private void aantalTokens_Click(object sender, EventArgs e)
-        {
-            private decimal Tokens
-
-            public Tokens()
-            {
-                balance = 100;
-            }
-
-            public decimal getBalance()
-            {
-                return balance;
-            }
-
-            public void addToBalance(decimal amount)
-            {
-                getBalance += amount;
-            }
-
-            public bool subtractFromBalance(decimal amount)
-            {
-                if(amount < balance)
-            {
-                balance -= amount;
-                return true;
-            }
-                else
-            {
-                return false;
-            }
-        }
     }
 }
