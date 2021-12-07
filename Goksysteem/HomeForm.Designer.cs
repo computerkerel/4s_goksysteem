@@ -33,6 +33,7 @@ namespace Goksysteem
             this.lbLogout = new System.Windows.Forms.Label();
             this.lbSummary = new System.Windows.Forms.Label();
             this.lbLogo = new System.Windows.Forms.Label();
+            this.txbHome = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbStake
@@ -84,11 +85,27 @@ namespace Goksysteem
             this.lbLogo.Text = "4s";
             this.lbLogo.Click += new System.EventHandler(this.lbLogo_Click);
             // 
+            // txbHome
+            // 
+            this.txbHome.BackColor = System.Drawing.SystemColors.Info;
+            this.txbHome.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txbHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.txbHome.Location = new System.Drawing.Point(63, 95);
+            this.txbHome.Multiline = true;
+            this.txbHome.Name = "txbHome";
+            this.txbHome.ReadOnly = true;
+            this.txbHome.Size = new System.Drawing.Size(686, 321);
+            this.txbHome.TabIndex = 13;
+            this.txbHome.TabStop = false;
+            this.txbHome.Text = "Zet jouw tokens in voor de uitslag van onze voetbal wedstrijden";
+            this.txbHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txbHome);
             this.Controls.Add(this.lbStake);
             this.Controls.Add(this.lbLogout);
             this.Controls.Add(this.lbSummary);
@@ -106,5 +123,6 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbLogout;
         private System.Windows.Forms.Label lbSummary;
         private System.Windows.Forms.Label lbLogo;
+        private System.Windows.Forms.TextBox txbHome;
     }
 }
