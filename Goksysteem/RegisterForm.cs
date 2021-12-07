@@ -10,25 +10,18 @@ using System.Windows.Forms;
 
 namespace Goksysteem
 {
-    public partial class LoginForm : Form
+    public partial class RegisterForm : Form
     {
-        public LoginForm()
+        public RegisterForm()
         {
             InitializeComponent();
         }
 
-        private void xz_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
         {
             var homeForm = new HomeForm();
             this.Hide();
             homeForm.Show(this);
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            var registerForm = new RegisterForm();
-            this.Hide();
-            registerForm.Show(this);
         }
     }
 }

@@ -92,6 +92,7 @@ namespace Goksysteem
             // 
             // txbPassword
             // 
+            this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.txbPassword.Location = new System.Drawing.Point(361, 211);
             this.txbPassword.Multiline = true;
             this.txbPassword.Name = "txbPassword";
