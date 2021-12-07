@@ -79,9 +79,9 @@ namespace Goksysteem
             this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.lbLogo.Location = new System.Drawing.Point(12, 9);
             this.lbLogo.Name = "lbLogo";
-            this.lbLogo.Size = new System.Drawing.Size(171, 58);
+            this.lbLogo.Size = new System.Drawing.Size(78, 58);
             this.lbLogo.TabIndex = 8;
-            this.lbLogo.Text = "(Logo)";
+            this.lbLogo.Text = "4s";
             this.lbLogo.Click += new System.EventHandler(this.lbLogo_Click);
             // 
             // HomeForm
