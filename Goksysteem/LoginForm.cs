@@ -23,5 +23,10 @@ namespace Goksysteem
             this.Hide();
             homeForm.Show(this);
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

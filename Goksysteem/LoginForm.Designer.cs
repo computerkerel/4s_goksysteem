@@ -29,96 +29,100 @@ namespace Goksysteem
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.xz = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.txbUsername = new System.Windows.Forms.TextBox();
+            this.lbUsername = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.txbPassword = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox3
+            // btnRegister
             // 
-            this.textBox3.Location = new System.Drawing.Point(404, 170);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(9, 20);
-            this.textBox3.TabIndex = 11;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnRegister.Location = new System.Drawing.Point(615, 13);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(172, 66);
+            this.btnRegister.TabIndex = 9;
+            this.btnRegister.Text = "Registreren";
+            this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
-            // pictureBox1
+            // btnLogin
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(272, 112);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 122);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.btnLogin.Location = new System.Drawing.Point(339, 313);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(172, 66);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Inloggen";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.xz_Click);
             // 
-            // button1
+            // txbUsername
             // 
-            this.button1.Location = new System.Drawing.Point(404, 307);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 31);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = true;
+            this.txbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.txbUsername.Location = new System.Drawing.Point(361, 128);
+            this.txbUsername.Multiline = true;
+            this.txbUsername.Name = "txbUsername";
+            this.txbUsername.Size = new System.Drawing.Size(343, 44);
+            this.txbUsername.TabIndex = 10;
             // 
-            // textBox2
+            // lbUsername
             // 
-            this.textBox2.Location = new System.Drawing.Point(361, 275);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 8;
+            this.lbUsername.AutoSize = true;
+            this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lbUsername.Location = new System.Drawing.Point(117, 128);
+            this.lbUsername.Name = "lbUsername";
+            this.lbUsername.Size = new System.Drawing.Size(238, 39);
+            this.lbUsername.TabIndex = 11;
+            this.lbUsername.Text = "Gebruiksnaam";
             // 
-            // textBox1
+            // lbPassword
             // 
-            this.textBox1.Location = new System.Drawing.Point(361, 241);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 7;
+            this.lbPassword.AutoSize = true;
+            this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lbPassword.Location = new System.Drawing.Point(131, 216);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(206, 39);
+            this.lbPassword.TabIndex = 12;
+            this.lbPassword.Text = "Wachtwoord";
             // 
-            // xz
+            // txbPassword
             // 
-            this.xz.Location = new System.Drawing.Point(272, 305);
-            this.xz.Margin = new System.Windows.Forms.Padding(4);
-            this.xz.Name = "xz";
-            this.xz.Size = new System.Drawing.Size(124, 32);
-            this.xz.TabIndex = 6;
-            this.xz.Text = "Login";
-            this.xz.UseVisualStyleBackColor = true;
-            this.xz.Click += new System.EventHandler(this.xz_Click);
+            this.txbPassword.Location = new System.Drawing.Point(361, 211);
+            this.txbPassword.Multiline = true;
+            this.txbPassword.Name = "txbPassword";
+            this.txbPassword.Size = new System.Drawing.Size(343, 44);
+            this.txbPassword.TabIndex = 13;
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.xz);
+            this.Controls.Add(this.txbPassword);
+            this.Controls.Add(this.lbPassword);
+            this.Controls.Add(this.lbUsername);
+            this.Controls.Add(this.txbUsername);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.btnLogin);
             this.Name = "LoginForm";
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button xz;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.TextBox txbUsername;
+        private System.Windows.Forms.Label lbUsername;
+        private System.Windows.Forms.Label lbPassword;
+        private System.Windows.Forms.TextBox txbPassword;
     }
 }
 
