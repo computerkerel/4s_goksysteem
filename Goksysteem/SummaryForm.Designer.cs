@@ -94,7 +94,7 @@ namespace Goksysteem
             this.lbhistory.AutoSize = true;
             this.lbhistory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbhistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbhistory.Location = new System.Drawing.Point(59, 110);
+            this.lbhistory.Location = new System.Drawing.Point(128, 110);
             this.lbhistory.Name = "lbhistory";
             this.lbhistory.Size = new System.Drawing.Size(329, 58);
             this.lbhistory.TabIndex = 17;

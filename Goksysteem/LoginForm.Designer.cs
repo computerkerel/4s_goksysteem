@@ -35,6 +35,7 @@ namespace Goksysteem
             this.lbUsername = new System.Windows.Forms.Label();
             this.lbPassword = new System.Windows.Forms.Label();
             this.txbPassword = new System.Windows.Forms.TextBox();
+            this.lbError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnRegister
@@ -99,11 +100,20 @@ namespace Goksysteem
             this.txbPassword.Size = new System.Drawing.Size(343, 44);
             this.txbPassword.TabIndex = 13;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.Location = new System.Drawing.Point(358, 110);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(0, 15);
+            this.lbError.TabIndex = 14;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.txbPassword);
             this.Controls.Add(this.lbPassword);
             this.Controls.Add(this.lbUsername);
@@ -124,6 +134,7 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbUsername;
         private System.Windows.Forms.Label lbPassword;
         private System.Windows.Forms.TextBox txbPassword;
+        private System.Windows.Forms.Label lbError;
     }
 }
 
