@@ -44,5 +44,20 @@ namespace Goksysteem
             this.Hide();
             homeForm.Show(this);
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            int result;
+            if (!int.TryParse(txbStakeAmount.Text, out result))
+            {
+                lbError.Text = "Voer een getal in";
+            }
+            else
+            {
+                lbError.Text = "";
+                lbMessage.Text = "Succesvol opgeslagen";
+                txbStakeAmount.Text = "";
+            }
+        }
     }
 }

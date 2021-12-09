@@ -41,6 +41,8 @@ namespace Goksysteem
             this.lbStakes = new System.Windows.Forms.Label();
             this.txbStakeAmount = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lbError = new System.Windows.Forms.Label();
+            this.lbMessage = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbStake
@@ -172,12 +174,31 @@ namespace Goksysteem
             this.btnSave.TabIndex = 23;
             this.btnSave.Text = "Opslaan";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.Location = new System.Drawing.Point(649, 265);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(0, 15);
+            this.lbError.TabIndex = 24;
+            // 
+            // lbMessage
+            // 
+            this.lbMessage.AutoSize = true;
+            this.lbMessage.Location = new System.Drawing.Point(652, 405);
+            this.lbMessage.Name = "lbMessage";
+            this.lbMessage.Size = new System.Drawing.Size(0, 15);
+            this.lbMessage.TabIndex = 25;
             // 
             // StakeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbMessage);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txbStakeAmount);
             this.Controls.Add(this.lbStakes);
@@ -211,5 +232,7 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbStakes;
         private System.Windows.Forms.TextBox txbStakeAmount;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lbError;
+        private System.Windows.Forms.Label lbMessage;
     }
 }
