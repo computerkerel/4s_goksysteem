@@ -67,8 +67,10 @@ namespace Goksysteem
             // 
             this.lbSummary.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
             this.lbSummary.AutoSize = true;
+            this.lbSummary.BackColor = System.Drawing.SystemColors.Control;
             this.lbSummary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSummary.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbSummary.Location = new System.Drawing.Point(189, 25);
             this.lbSummary.Name = "lbSummary";
             this.lbSummary.Size = new System.Drawing.Size(217, 38);

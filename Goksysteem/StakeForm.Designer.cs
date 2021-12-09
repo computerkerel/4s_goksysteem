@@ -48,6 +48,7 @@ namespace Goksysteem
             this.lbStake.AutoSize = true;
             this.lbStake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbStake.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStake.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbStake.Location = new System.Drawing.Point(441, 25);
             this.lbStake.Name = "lbStake";
             this.lbStake.Size = new System.Drawing.Size(132, 38);
