@@ -36,6 +36,7 @@ namespace Goksysteem
             this.btnRegister = new System.Windows.Forms.Button();
             this.lbEmail = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
+            this.lbError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txbPassword
@@ -107,11 +108,20 @@ namespace Goksysteem
             this.txbEmail.Size = new System.Drawing.Size(343, 44);
             this.txbEmail.TabIndex = 19;
             // 
+            // lbError
+            // 
+            this.lbError.AutoSize = true;
+            this.lbError.Location = new System.Drawing.Point(348, 56);
+            this.lbError.Name = "lbError";
+            this.lbError.Size = new System.Drawing.Size(0, 15);
+            this.lbError.TabIndex = 21;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbError);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.txbPassword);
@@ -135,5 +145,6 @@ namespace Goksysteem
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.TextBox txbEmail;
+        private System.Windows.Forms.Label lbError;
     }
 }

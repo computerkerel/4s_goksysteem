@@ -19,9 +19,16 @@ namespace Goksysteem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            var homeForm = new HomeForm();
-            this.Hide();
-            homeForm.Show(this);
+            if(txbUsername.Text.Length == 0 || txbEmail.Text.Length == 0 || txbPassword.Text.Length == 0)
+            {
+                lbError.Text = "Vul alle velden in";
+            }
+            else
+            {
+                var homeForm = new HomeForm();
+                this.Hide();
+                homeForm.Show(this);
+            }
         }
     }
 }
