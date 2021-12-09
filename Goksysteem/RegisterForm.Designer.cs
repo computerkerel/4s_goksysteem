@@ -41,7 +41,7 @@ namespace Goksysteem
             // txbPassword
             // 
             this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.txbPassword.Location = new System.Drawing.Point(351, 214);
+            this.txbPassword.Location = new System.Drawing.Point(351, 234);
             this.txbPassword.Multiline = true;
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(343, 44);
@@ -51,7 +51,7 @@ namespace Goksysteem
             // 
             this.lbPassword.AutoSize = true;
             this.lbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lbPassword.Location = new System.Drawing.Point(121, 219);
+            this.lbPassword.Location = new System.Drawing.Point(121, 239);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(206, 39);
             this.lbPassword.TabIndex = 17;
@@ -61,7 +61,7 @@ namespace Goksysteem
             // 
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.lbUsername.Location = new System.Drawing.Point(107, 88);
+            this.lbUsername.Location = new System.Drawing.Point(107, 74);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(238, 39);
             this.lbUsername.TabIndex = 16;
@@ -70,7 +70,7 @@ namespace Goksysteem
             // txbUsername
             // 
             this.txbUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.txbUsername.Location = new System.Drawing.Point(351, 88);
+            this.txbUsername.Location = new System.Drawing.Point(351, 74);
             this.txbUsername.Multiline = true;
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(343, 44);
