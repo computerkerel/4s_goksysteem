@@ -45,7 +45,7 @@ namespace Goksysteem
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(172, 66);
-            this.btnRegister.TabIndex = 9;
+            this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "Registreren";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -57,7 +57,7 @@ namespace Goksysteem
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(172, 66);
-            this.btnLogin.TabIndex = 6;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Inloggen";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.xz_Click);
@@ -69,7 +69,7 @@ namespace Goksysteem
             this.txbUsername.Multiline = true;
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(343, 44);
-            this.txbUsername.TabIndex = 10;
+            this.txbUsername.TabIndex = 0;
             // 
             // lbUsername
             // 
@@ -78,7 +78,7 @@ namespace Goksysteem
             this.lbUsername.Location = new System.Drawing.Point(117, 128);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(238, 39);
-            this.lbUsername.TabIndex = 11;
+            this.lbUsername.TabIndex = 5;
             this.lbUsername.Text = "Gebruiksnaam";
             // 
             // lbPassword
@@ -88,7 +88,7 @@ namespace Goksysteem
             this.lbPassword.Location = new System.Drawing.Point(131, 216);
             this.lbPassword.Name = "lbPassword";
             this.lbPassword.Size = new System.Drawing.Size(206, 39);
-            this.lbPassword.TabIndex = 12;
+            this.lbPassword.TabIndex = 5;
             this.lbPassword.Text = "Wachtwoord";
             // 
             // txbPassword
@@ -98,7 +98,7 @@ namespace Goksysteem
             this.txbPassword.Multiline = true;
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(343, 44);
-            this.txbPassword.TabIndex = 13;
+            this.txbPassword.TabIndex = 1;
             // 
             // lbError
             // 

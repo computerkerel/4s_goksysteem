@@ -47,7 +47,7 @@ namespace Goksysteem
             this.txbPassword.Multiline = true;
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(343, 44);
-            this.txbPassword.TabIndex = 18;
+            this.txbPassword.TabIndex = 2;
             // 
             // lbPassword
             // 
@@ -76,7 +76,7 @@ namespace Goksysteem
             this.txbUsername.Multiline = true;
             this.txbUsername.Name = "txbUsername";
             this.txbUsername.Size = new System.Drawing.Size(343, 44);
-            this.txbUsername.TabIndex = 15;
+            this.txbUsername.TabIndex = 0;
             // 
             // btnRegister
             // 
@@ -85,7 +85,7 @@ namespace Goksysteem
             this.btnRegister.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(172, 66);
-            this.btnRegister.TabIndex = 14;
+            this.btnRegister.TabIndex = 3;
             this.btnRegister.Text = "Registreer";
             this.btnRegister.UseVisualStyleBackColor = true;
             this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
@@ -107,7 +107,7 @@ namespace Goksysteem
             this.txbEmail.Multiline = true;
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(343, 44);
-            this.txbEmail.TabIndex = 19;
+            this.txbEmail.TabIndex = 1;
             // 
             // lbError
             // 
@@ -125,7 +125,7 @@ namespace Goksysteem
             this.lbBack.Location = new System.Drawing.Point(12, 9);
             this.lbBack.Name = "lbBack";
             this.lbBack.Size = new System.Drawing.Size(100, 29);
-            this.lbBack.TabIndex = 22;
+            this.lbBack.TabIndex = 4;
             this.lbBack.Text = "< Terug";
             this.lbBack.Click += new System.EventHandler(this.lbBack_Click);
             // 
