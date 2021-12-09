@@ -33,6 +33,10 @@ namespace Goksysteem
             this.lbLogout = new System.Windows.Forms.Label();
             this.lbSummary = new System.Windows.Forms.Label();
             this.lbLogo = new System.Windows.Forms.Label();
+            this.lbhistory = new System.Windows.Forms.Label();
+            this.lbPending = new System.Windows.Forms.Label();
+            this.lbTokens = new System.Windows.Forms.Label();
+            this.lbTokenBalance = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbStake
@@ -84,11 +88,59 @@ namespace Goksysteem
             this.lbLogo.Text = "4s";
             this.lbLogo.Click += new System.EventHandler(this.lbLogo_Click);
             // 
+            // lbhistory
+            // 
+            this.lbhistory.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.lbhistory.AutoSize = true;
+            this.lbhistory.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbhistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbhistory.Location = new System.Drawing.Point(59, 110);
+            this.lbhistory.Name = "lbhistory";
+            this.lbhistory.Size = new System.Drawing.Size(329, 58);
+            this.lbhistory.TabIndex = 17;
+            this.lbhistory.Text = "Geschiedenis";
+            // 
+            // lbPending
+            // 
+            this.lbPending.AccessibleRole = System.Windows.Forms.AccessibleRole.Client;
+            this.lbPending.AutoSize = true;
+            this.lbPending.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbPending.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lbPending.Location = new System.Drawing.Point(517, 110);
+            this.lbPending.Name = "lbPending";
+            this.lbPending.Size = new System.Drawing.Size(150, 58);
+            this.lbPending.TabIndex = 18;
+            this.lbPending.Text = "Actief";
+            // 
+            // lbTokens
+            // 
+            this.lbTokens.AutoSize = true;
+            this.lbTokens.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbTokens.Location = new System.Drawing.Point(174, 421);
+            this.lbTokens.Name = "lbTokens";
+            this.lbTokens.Size = new System.Drawing.Size(27, 20);
+            this.lbTokens.TabIndex = 22;
+            this.lbTokens.Text = "50";
+            // 
+            // lbTokenBalance
+            // 
+            this.lbTokenBalance.AutoSize = true;
+            this.lbTokenBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lbTokenBalance.Location = new System.Drawing.Point(18, 421);
+            this.lbTokenBalance.Name = "lbTokenBalance";
+            this.lbTokenBalance.Size = new System.Drawing.Size(137, 20);
+            this.lbTokenBalance.TabIndex = 21;
+            this.lbTokenBalance.Text = "Uw token balans:";
+            // 
             // SummaryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbTokens);
+            this.Controls.Add(this.lbTokenBalance);
+            this.Controls.Add(this.lbPending);
+            this.Controls.Add(this.lbhistory);
             this.Controls.Add(this.lbStake);
             this.Controls.Add(this.lbLogout);
             this.Controls.Add(this.lbSummary);
@@ -106,5 +158,9 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbLogout;
         private System.Windows.Forms.Label lbSummary;
         private System.Windows.Forms.Label lbLogo;
+        private System.Windows.Forms.Label lbhistory;
+        private System.Windows.Forms.Label lbPending;
+        private System.Windows.Forms.Label lbTokens;
+        private System.Windows.Forms.Label lbTokenBalance;
     }
 }
