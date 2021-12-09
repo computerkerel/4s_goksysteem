@@ -37,6 +37,7 @@ namespace Goksysteem
             this.lbEmail = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.lbError = new System.Windows.Forms.Label();
+            this.lbBack = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txbPassword
@@ -116,11 +117,24 @@ namespace Goksysteem
             this.lbError.Size = new System.Drawing.Size(0, 15);
             this.lbError.TabIndex = 21;
             // 
+            // lbBack
+            // 
+            this.lbBack.AutoSize = true;
+            this.lbBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lbBack.Location = new System.Drawing.Point(12, 9);
+            this.lbBack.Name = "lbBack";
+            this.lbBack.Size = new System.Drawing.Size(100, 29);
+            this.lbBack.TabIndex = 22;
+            this.lbBack.Text = "< Terug";
+            this.lbBack.Click += new System.EventHandler(this.lbBack_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lbBack);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.txbEmail);
@@ -146,5 +160,6 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbEmail;
         private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Label lbError;
+        private System.Windows.Forms.Label lbBack;
     }
 }
