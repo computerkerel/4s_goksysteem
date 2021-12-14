@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Goksysteem
 {
-    public partial class SummaryForm : Form
+    public partial class GamesForm : Form
     {
-        public SummaryForm()
+        public GamesForm()
         {
             InitializeComponent();
         }
@@ -24,11 +24,11 @@ namespace Goksysteem
             summaryForm.Show(this);
         }
 
-        private void lbStake_Click(object sender, EventArgs e)
+        private void lbLogo_Click(object sender, EventArgs e)
         {
-            var gamesForm = new GamesForm();
+            var homeForm = new HomeForm();
             this.Hide();
-            gamesForm.Show(this);
+            homeForm.Show(this);
         }
 
         private void lbLogout_Click(object sender, EventArgs e)
@@ -38,11 +38,18 @@ namespace Goksysteem
             loginForm.Show(this);
         }
 
-        private void lbLogo_Click(object sender, EventArgs e)
+        private void btnChoose_Click(object sender, EventArgs e)
         {
-            var homeForm = new HomeForm();
-            this.Hide();
-            homeForm.Show(this);
+            if(listboxGames.SelectedIndex == -1)
+            {
+                lbError.Text = "Selecteer een wedstrijd";
+            }
+            else
+            {
+                var stakeForm = new StakeForm();
+                this.Hide();
+                stakeForm.Show(this);
+            }
         }
     }
 }

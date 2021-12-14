@@ -59,5 +59,12 @@ namespace Goksysteem
                 txbStakeAmount.Text = "";
             }
         }
+
+        private void lbBack_Click(object sender, EventArgs e)
+        {
+            var gamesForm = new GamesForm();
+            this.Hide();
+            gamesForm.Show(this);
+        }
     }
 }

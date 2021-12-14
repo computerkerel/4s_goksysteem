@@ -26,9 +26,9 @@ namespace Goksysteem
 
         private void lbStake_Click(object sender, EventArgs e)
         {
-            var stakeForm = new StakeForm();
+            var gamesForm = new GamesForm();
             this.Hide();
-            stakeForm.Show(this);
+            gamesForm.Show(this);
         }
 
         private void lbLogout_Click(object sender, EventArgs e)
