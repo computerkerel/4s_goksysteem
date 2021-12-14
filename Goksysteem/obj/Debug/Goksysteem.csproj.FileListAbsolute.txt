@@ -12,3 +12,4 @@ C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.pdb
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.StakeForm.resources
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.RegisterForm.resources
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.csproj.AssemblyReference.cache
+C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.AdminForm.resources

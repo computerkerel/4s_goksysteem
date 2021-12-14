@@ -29,6 +29,13 @@ namespace Goksysteem
                 this.Hide();
                 homeForm.Show(this);
             }
+
+            if (txbUsername.Text == "admin" && txbPassword.Text == "admin")
+            {
+                var adminForm = new AdminForm();
+                this.Hide();
+                adminForm.Show(this);
+            }
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
