@@ -35,7 +35,6 @@ namespace Goksysteem
             this.lbLogo = new System.Windows.Forms.Label();
             this.lbGames = new System.Windows.Forms.Label();
             this.lbGamble = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.lbTokenBalance = new System.Windows.Forms.Label();
             this.lbTokens = new System.Windows.Forms.Label();
             this.lbStakes = new System.Windows.Forms.Label();
@@ -43,6 +42,8 @@ namespace Goksysteem
             this.btnSave = new System.Windows.Forms.Button();
             this.lbError = new System.Windows.Forms.Label();
             this.lbMessage = new System.Windows.Forms.Label();
+            this.listboxGames = new System.Windows.Forms.ListBox();
+            this.lbSelect = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbStake
@@ -51,7 +52,8 @@ namespace Goksysteem
             this.lbStake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbStake.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbStake.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbStake.Location = new System.Drawing.Point(441, 25);
+            this.lbStake.Location = new System.Drawing.Point(588, 31);
+            this.lbStake.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStake.Name = "lbStake";
             this.lbStake.Size = new System.Drawing.Size(132, 38);
             this.lbStake.TabIndex = 15;
@@ -63,7 +65,8 @@ namespace Goksysteem
             this.lbLogout.AutoSize = true;
             this.lbLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogout.Location = new System.Drawing.Point(595, 25);
+            this.lbLogout.Location = new System.Drawing.Point(793, 31);
+            this.lbLogout.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLogout.Name = "lbLogout";
             this.lbLogout.Size = new System.Drawing.Size(154, 38);
             this.lbLogout.TabIndex = 14;
@@ -76,7 +79,8 @@ namespace Goksysteem
             this.lbSummary.AutoSize = true;
             this.lbSummary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSummary.Location = new System.Drawing.Point(189, 25);
+            this.lbSummary.Location = new System.Drawing.Point(252, 31);
+            this.lbSummary.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbSummary.Name = "lbSummary";
             this.lbSummary.Size = new System.Drawing.Size(217, 38);
             this.lbSummary.TabIndex = 13;
@@ -88,7 +92,8 @@ namespace Goksysteem
             this.lbLogo.AutoSize = true;
             this.lbLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbLogo.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbLogo.Location = new System.Drawing.Point(12, 9);
+            this.lbLogo.Location = new System.Drawing.Point(16, 11);
+            this.lbLogo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbLogo.Name = "lbLogo";
             this.lbLogo.Size = new System.Drawing.Size(78, 58);
             this.lbLogo.TabIndex = 12;
@@ -101,7 +106,8 @@ namespace Goksysteem
             this.lbGames.AutoSize = true;
             this.lbGames.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbGames.Location = new System.Drawing.Point(72, 106);
+            this.lbGames.Location = new System.Drawing.Point(96, 130);
+            this.lbGames.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGames.Name = "lbGames";
             this.lbGames.Size = new System.Drawing.Size(290, 58);
             this.lbGames.TabIndex = 16;
@@ -113,26 +119,19 @@ namespace Goksysteem
             this.lbGamble.AutoSize = true;
             this.lbGamble.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbGamble.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbGamble.Location = new System.Drawing.Point(470, 106);
+            this.lbGamble.Location = new System.Drawing.Point(627, 130);
+            this.lbGamble.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGamble.Name = "lbGamble";
             this.lbGamble.Size = new System.Drawing.Size(198, 58);
             this.lbGamble.TabIndex = 17;
             this.lbGamble.Text = "Gokken";
             // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(50, 186);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(333, 252);
-            this.listView1.TabIndex = 18;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // lbTokenBalance
             // 
             this.lbTokenBalance.AutoSize = true;
             this.lbTokenBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbTokenBalance.Location = new System.Drawing.Point(485, 186);
+            this.lbTokenBalance.Location = new System.Drawing.Point(647, 229);
+            this.lbTokenBalance.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTokenBalance.Name = "lbTokenBalance";
             this.lbTokenBalance.Size = new System.Drawing.Size(137, 20);
             this.lbTokenBalance.TabIndex = 19;
@@ -142,7 +141,8 @@ namespace Goksysteem
             // 
             this.lbTokens.AutoSize = true;
             this.lbTokens.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbTokens.Location = new System.Drawing.Point(641, 186);
+            this.lbTokens.Location = new System.Drawing.Point(855, 229);
+            this.lbTokens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTokens.Name = "lbTokens";
             this.lbTokens.Size = new System.Drawing.Size(27, 20);
             this.lbTokens.TabIndex = 20;
@@ -152,7 +152,8 @@ namespace Goksysteem
             // 
             this.lbStakes.AutoSize = true;
             this.lbStakes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lbStakes.Location = new System.Drawing.Point(430, 286);
+            this.lbStakes.Location = new System.Drawing.Point(573, 352);
+            this.lbStakes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbStakes.Name = "lbStakes";
             this.lbStakes.Size = new System.Drawing.Size(192, 20);
             this.lbStakes.TabIndex = 21;
@@ -160,17 +161,19 @@ namespace Goksysteem
             // 
             // txbStakeAmount
             // 
-            this.txbStakeAmount.Location = new System.Drawing.Point(649, 286);
+            this.txbStakeAmount.Location = new System.Drawing.Point(865, 352);
+            this.txbStakeAmount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txbStakeAmount.Name = "txbStakeAmount";
-            this.txbStakeAmount.Size = new System.Drawing.Size(100, 20);
+            this.txbStakeAmount.Size = new System.Drawing.Size(132, 22);
             this.txbStakeAmount.TabIndex = 22;
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btnSave.Location = new System.Drawing.Point(547, 382);
+            this.btnSave.Location = new System.Drawing.Point(729, 470);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(88, 39);
+            this.btnSave.Size = new System.Drawing.Size(117, 48);
             this.btnSave.TabIndex = 23;
             this.btnSave.Text = "Opslaan";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -179,24 +182,53 @@ namespace Goksysteem
             // lbError
             // 
             this.lbError.AutoSize = true;
-            this.lbError.Location = new System.Drawing.Point(649, 265);
+            this.lbError.Location = new System.Drawing.Point(865, 326);
+            this.lbError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbError.Name = "lbError";
-            this.lbError.Size = new System.Drawing.Size(0, 15);
+            this.lbError.Size = new System.Drawing.Size(0, 17);
             this.lbError.TabIndex = 24;
             // 
             // lbMessage
             // 
             this.lbMessage.AutoSize = true;
-            this.lbMessage.Location = new System.Drawing.Point(652, 405);
+            this.lbMessage.Location = new System.Drawing.Point(869, 498);
+            this.lbMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(0, 15);
+            this.lbMessage.Size = new System.Drawing.Size(0, 17);
             this.lbMessage.TabIndex = 25;
+            // 
+            // listboxGames
+            // 
+            this.listboxGames.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.listboxGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.listboxGames.FormattingEnabled = true;
+            this.listboxGames.ItemHeight = 29;
+            this.listboxGames.Items.AddRange(new object[] {
+            "FC Dorst - FC Roosendaal",
+            "FC Tilburg - FC Breda",
+            "FC Breda - FC Dorst",
+            "FC Roosendaal - FC Tilburg"});
+            this.listboxGames.Location = new System.Drawing.Point(79, 229);
+            this.listboxGames.Name = "listboxGames";
+            this.listboxGames.Size = new System.Drawing.Size(352, 178);
+            this.listboxGames.TabIndex = 26;
+            // 
+            // lbSelect
+            // 
+            this.lbSelect.AutoSize = true;
+            this.lbSelect.Location = new System.Drawing.Point(172, 209);
+            this.lbSelect.Name = "lbSelect";
+            this.lbSelect.Size = new System.Drawing.Size(155, 17);
+            this.lbSelect.TabIndex = 27;
+            this.lbSelect.Text = "Selecteer een wedstrijd";
             // 
             // StakeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.lbSelect);
+            this.Controls.Add(this.listboxGames);
             this.Controls.Add(this.lbMessage);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.btnSave);
@@ -204,13 +236,13 @@ namespace Goksysteem
             this.Controls.Add(this.lbStakes);
             this.Controls.Add(this.lbTokens);
             this.Controls.Add(this.lbTokenBalance);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.lbGamble);
             this.Controls.Add(this.lbGames);
             this.Controls.Add(this.lbStake);
             this.Controls.Add(this.lbLogout);
             this.Controls.Add(this.lbSummary);
             this.Controls.Add(this.lbLogo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StakeForm";
             this.Text = "Stake";
             this.ResumeLayout(false);
@@ -226,7 +258,6 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbLogo;
         private System.Windows.Forms.Label lbGames;
         private System.Windows.Forms.Label lbGamble;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label lbTokenBalance;
         private System.Windows.Forms.Label lbTokens;
         private System.Windows.Forms.Label lbStakes;
@@ -234,5 +265,7 @@ namespace Goksysteem
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label lbError;
         private System.Windows.Forms.Label lbMessage;
+        private System.Windows.Forms.ListBox listboxGames;
+        private System.Windows.Forms.Label lbSelect;
     }
 }
