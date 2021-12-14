@@ -58,6 +58,7 @@ namespace Goksysteem
             this.lbLogout.Size = new System.Drawing.Size(154, 38);
             this.lbLogout.TabIndex = 16;
             this.lbLogout.Text = "Uitloggen";
+            this.lbLogout.Click += new System.EventHandler(this.lbLogout_Click);
             // 
             // lbSummary
             // 

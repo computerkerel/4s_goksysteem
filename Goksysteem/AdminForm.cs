@@ -16,5 +16,10 @@ namespace Goksysteem
         {
             InitializeComponent();
         }
+
+        private void lbLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
