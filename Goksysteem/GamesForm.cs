@@ -18,6 +18,10 @@ namespace Goksysteem
         {
             InitializeComponent();
             fetchArray();
+<<<<<<< Updated upstream
+=======
+            fetchArray();
+>>>>>>> Stashed changes
             listboxGames.Items.Clear();
             foreach (var m in games)
             {
