@@ -19,6 +19,10 @@ namespace Goksysteem
             InitializeComponent();
             fetchArray();
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+            fetchArray();
+>>>>>>> Stashed changes
 =======
             fetchArray();
 >>>>>>> Stashed changes
