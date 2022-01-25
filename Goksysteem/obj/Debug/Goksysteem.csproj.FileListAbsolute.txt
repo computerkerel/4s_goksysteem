@@ -14,3 +14,6 @@ C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.RegisterForm.resourc
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.csproj.AssemblyReference.cache
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.AdminForm.resources
 C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.GamesForm.resources
+C:\PRC-III_C#\4s_goksysteem\Goksysteem\bin\Debug\Newtonsoft.Json.dll
+C:\PRC-III_C#\4s_goksysteem\Goksysteem\bin\Debug\Newtonsoft.Json.xml
+C:\PRC-III_C#\4s_goksysteem\Goksysteem\obj\Debug\Goksysteem.csproj.CopyComplete

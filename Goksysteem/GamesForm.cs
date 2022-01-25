@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,26 @@ namespace Goksysteem
         public GamesForm()
         {
             InitializeComponent();
+            fetchArray();
+            listboxGames.Items.Clear();
+            foreach (var m in games)
+            {
+                int team1 = m.team1_id;
+                listboxGames.Items.Add(m);
+            }
+        }
+
+        List<Games> games;
+
+        public void fetchArray()
+        {
+            string url = "http://4s_schoolvoetbal.test/api/fetchinator";
+            string output = "";
+            using (WebClient wc = new WebClient())
+            {
+                output = wc.DownloadString(url);
+            }
+            games = JsonConvert.DeserializeObject<List<Games>>(output);
         }
 
         private void lbSummary_Click(object sender, EventArgs e)

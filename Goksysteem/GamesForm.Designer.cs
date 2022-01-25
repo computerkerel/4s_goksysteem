@@ -55,14 +55,9 @@ namespace Goksysteem
             this.listboxGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.listboxGames.FormattingEnabled = true;
             this.listboxGames.ItemHeight = 29;
-            this.listboxGames.Items.AddRange(new object[] {
-            "FC Dorst - FC Roosendaal",
-            "FC Tilburg - FC Breda",
-            "FC Breda - FC Dorst",
-            "FC Roosendaal - FC Tilburg"});
-            this.listboxGames.Location = new System.Drawing.Point(319, 217);
+            this.listboxGames.Location = new System.Drawing.Point(288, 217);
             this.listboxGames.Name = "listboxGames";
-            this.listboxGames.Size = new System.Drawing.Size(352, 178);
+            this.listboxGames.Size = new System.Drawing.Size(424, 178);
             this.listboxGames.TabIndex = 29;
             // 
             // lbGames
