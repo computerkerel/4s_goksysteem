@@ -21,6 +21,10 @@ namespace Goksysteem
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+            fetchArray();
+>>>>>>> Stashed changes
 =======
             fetchArray();
 >>>>>>> Stashed changes
