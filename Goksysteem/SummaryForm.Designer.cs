@@ -37,6 +37,7 @@ namespace Goksysteem
             this.lbPending = new System.Windows.Forms.Label();
             this.lbTokens = new System.Windows.Forms.Label();
             this.lbTokenBalance = new System.Windows.Forms.Label();
+            this.txbHistory = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbStake
@@ -142,11 +143,24 @@ namespace Goksysteem
             this.lbTokenBalance.TabIndex = 21;
             this.lbTokenBalance.Text = "Uw token balans:";
             // 
+            // txbHistory
+            // 
+            this.txbHistory.Location = new System.Drawing.Point(167, 227);
+            this.txbHistory.Multiline = true;
+            this.txbHistory.Name = "txbHistory";
+            this.txbHistory.ReadOnly = true;
+            this.txbHistory.Size = new System.Drawing.Size(333, 230);
+            this.txbHistory.TabIndex = 23;
+            this.txbHistory.TabStop = false;
+            this.txbHistory.Text = "Het is leeg hier";
+            this.txbHistory.TextChanged += new System.EventHandler(this.txbHistory_TextChanged);
+            // 
             // SummaryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.txbHistory);
             this.Controls.Add(this.lbTokens);
             this.Controls.Add(this.lbTokenBalance);
             this.Controls.Add(this.lbPending);
@@ -155,7 +169,7 @@ namespace Goksysteem
             this.Controls.Add(this.lbLogout);
             this.Controls.Add(this.lbSummary);
             this.Controls.Add(this.lbLogo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SummaryForm";
             this.Text = "Summary";
             this.ResumeLayout(false);
@@ -173,5 +187,6 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbPending;
         private System.Windows.Forms.Label lbTokens;
         private System.Windows.Forms.Label lbTokenBalance;
+        private System.Windows.Forms.TextBox txbHistory;
     }
 }

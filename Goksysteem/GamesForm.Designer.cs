@@ -38,12 +38,13 @@ namespace Goksysteem
             this.lbLogo = new System.Windows.Forms.Label();
             this.btnChoose = new System.Windows.Forms.Button();
             this.lbError = new System.Windows.Forms.Label();
+            this.txbInfo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbSelect
             // 
             this.lbSelect.AutoSize = true;
-            this.lbSelect.Location = new System.Drawing.Point(412, 197);
+            this.lbSelect.Location = new System.Drawing.Point(613, 144);
             this.lbSelect.Name = "lbSelect";
             this.lbSelect.Size = new System.Drawing.Size(155, 17);
             this.lbSelect.TabIndex = 30;
@@ -55,15 +56,10 @@ namespace Goksysteem
             this.listboxGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.listboxGames.FormattingEnabled = true;
             this.listboxGames.ItemHeight = 29;
-            this.listboxGames.Items.AddRange(new object[] {
-            "FC Dorst - FC Roosendaal",
-            "FC Tilburg - FC Breda",
-            "FC Breda - FC Dorst",
-            "FC Roosendaal - FC Tilburg"});
-            this.listboxGames.Location = new System.Drawing.Point(319, 217);
+            this.listboxGames.Location = new System.Drawing.Point(488, 173);
             this.listboxGames.Name = "listboxGames";
-            this.listboxGames.Size = new System.Drawing.Size(352, 178);
-            this.listboxGames.TabIndex = 29;
+            this.listboxGames.Size = new System.Drawing.Size(413, 236);
+            this.listboxGames.TabIndex = 0;
             // 
             // lbGames
             // 
@@ -71,7 +67,7 @@ namespace Goksysteem
             this.lbGames.AutoSize = true;
             this.lbGames.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lbGames.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lbGames.Location = new System.Drawing.Point(336, 118);
+            this.lbGames.Location = new System.Drawing.Point(371, 86);
             this.lbGames.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbGames.Name = "lbGames";
             this.lbGames.Size = new System.Drawing.Size(290, 58);
@@ -138,7 +134,7 @@ namespace Goksysteem
             this.btnChoose.Margin = new System.Windows.Forms.Padding(4);
             this.btnChoose.Name = "btnChoose";
             this.btnChoose.Size = new System.Drawing.Size(117, 48);
-            this.btnChoose.TabIndex = 35;
+            this.btnChoose.TabIndex = 1;
             this.btnChoose.Text = "Bevestig";
             this.btnChoose.UseVisualStyleBackColor = true;
             this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
@@ -151,11 +147,22 @@ namespace Goksysteem
             this.lbError.Size = new System.Drawing.Size(0, 17);
             this.lbError.TabIndex = 36;
             // 
+            // txbInfo
+            // 
+            this.txbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbInfo.Location = new System.Drawing.Point(63, 173);
+            this.txbInfo.Multiline = true;
+            this.txbInfo.Name = "txbInfo";
+            this.txbInfo.ReadOnly = true;
+            this.txbInfo.Size = new System.Drawing.Size(398, 236);
+            this.txbInfo.TabIndex = 37;
+            // 
             // GamesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(989, 514);
+            this.Controls.Add(this.txbInfo);
             this.Controls.Add(this.lbError);
             this.Controls.Add(this.btnChoose);
             this.Controls.Add(this.lbStake);
@@ -183,5 +190,6 @@ namespace Goksysteem
         private System.Windows.Forms.Label lbLogo;
         private System.Windows.Forms.Button btnChoose;
         private System.Windows.Forms.Label lbError;
+        private System.Windows.Forms.TextBox txbInfo;
     }
 }

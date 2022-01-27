@@ -73,6 +73,10 @@ namespace Goksysteem
                     sw.Close();
                 }
 
+                StreamWriter streamw = new StreamWriter("History.txt");
+                streamw.WriteLine($"Datum: {DateTime.Now}");
+                streamw.Close();
+
                 lbError.Text = "";
                 lbMessage.Text = "Succesvol opgeslagen";
                 txbStakeAmount.Text = "";

@@ -25,6 +25,8 @@ namespace Goksysteem
             {
                 int team1 = m.team1_id;
                 listboxGames.Items.Add(m);
+
+                txbInfo.Text += $"{m}:\r\nscheidsrechter: {m.scheidsrechter_naam}\r\n\r\n";
             }
         }
 

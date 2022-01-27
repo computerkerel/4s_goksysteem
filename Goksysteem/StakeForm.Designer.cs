@@ -74,7 +74,7 @@ namespace Goksysteem
             this.lbTokens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTokens.Name = "lbTokens";
             this.lbTokens.Size = new System.Drawing.Size(82, 20);
-            this.lbTokens.TabIndex = 20;
+            this.lbTokens.TabIndex = 0;
             this.lbTokens.Text = "niet actief";
             // 
             // lbStakes
@@ -94,7 +94,7 @@ namespace Goksysteem
             this.txbStakeAmount.Margin = new System.Windows.Forms.Padding(4);
             this.txbStakeAmount.Name = "txbStakeAmount";
             this.txbStakeAmount.Size = new System.Drawing.Size(148, 22);
-            this.txbStakeAmount.TabIndex = 22;
+            this.txbStakeAmount.TabIndex = 2;
             // 
             // btnSave
             // 
@@ -103,7 +103,7 @@ namespace Goksysteem
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(117, 48);
-            this.btnSave.TabIndex = 23;
+            this.btnSave.TabIndex = 3;
             this.btnSave.Text = "Opslaan";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -161,7 +161,7 @@ namespace Goksysteem
             this.cbResult.Location = new System.Drawing.Point(607, 236);
             this.cbResult.Name = "cbResult";
             this.cbResult.Size = new System.Drawing.Size(148, 24);
-            this.cbResult.TabIndex = 28;
+            this.cbResult.TabIndex = 1;
             // 
             // StakeForm
             // 

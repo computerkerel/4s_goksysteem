@@ -51,5 +51,14 @@ namespace Goksysteem
             this.Hide();
             homeForm.Show(this);
         }
+
+        private void txbHistory_TextChanged(object sender, EventArgs e)
+        {
+            using (var sr = new StreamReader("History.txt"))
+            {
+                txbHistory.Text = sr.ReadLine();
+                sr.Close();
+            }
+        }
     }
 }
